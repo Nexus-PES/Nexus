@@ -5,7 +5,7 @@ import { headCommentData } from "./data";
 export default function FromHeads() {
 	return (
 		<div className="phone:p-1 my-6 p-[0.5]">
-			<h1 className="font-bold text-2xl font-montserrat mb-4 mt-12">
+			<h1 className="font-bold text-2xl  mb-4 mt-12">
 				From Our
 				<span className="font-bold ml-2 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 					Heads
@@ -69,7 +69,7 @@ const Heads = (props) => {
 						<p className="text-xs font-medium tracking-wide font-inter text-text-secondary">
 							{props.domain}
 						</p>
-						<p className="text-[12px] font-montserrat flex items-center text-white bg-gradient-to-br from-primary to-secondary font-semibold rounded-2xl py-[1px] px-3">
+						<p className="text-[12px]  flex items-center text-white bg-gradient-to-br from-primary to-secondary font-semibold rounded-2xl py-[1px] px-3">
 							{tag.toUpperCase()}
 						</p>
 					</div>

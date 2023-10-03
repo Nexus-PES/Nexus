@@ -6,7 +6,7 @@ import { faqData } from "./data";
 const Faq = () => {
 	return (
 		<div className="w-full">
-			<h1 className="font-bold text-2xl font-montserrat mb-4 mt-12 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
+			<h1 className="font-bold text-2xl  mb-4 mt-12 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 				FAQ
 			</h1>
 			<FaqBox />
@@ -25,7 +25,7 @@ const FaqBox = () => {
 				className="px-4 py-5 flex flex-col border-gray-800 border hover:bg-gray-700 rounded font-poppins text-xs cursor-pointer"
 				onClick={() => setToggle((prev) => !prev)}
 			>
-				<div className="flex justify-between text-md font-montserrat items-start gap-x-4">
+				<div className="flex justify-between text-md  items-start gap-x-4">
 					<p className="text-white text-sm font-medium leading-tight">
 						{question}
 					</p>

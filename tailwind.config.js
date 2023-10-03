@@ -18,7 +18,6 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				inter: "Inter, sans-serif",
-				montserrat: "Montserrat, sans-serif",
 				bricolage: "Bricolage, sans-serif",
 			},
 			backgroundImage: {

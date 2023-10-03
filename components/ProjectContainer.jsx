@@ -25,7 +25,7 @@ const ProjectContainer = ({
 						alt="Project 1"
 						className="border-[1px] border-white/10 w-10 h-10 md:w-12 md:h-12 object-cover rounded-md"
 					/>
-					<h1 className="font-montserrat font-extrabold italic text-xl">
+					<h1 className=" font-extrabold italic text-xl">
 						{projectName}
 					</h1>
 				</div>
@@ -45,11 +45,11 @@ const ProjectContainer = ({
 				alt={projectName}
 				className="z-20 object-cover rounded-md overflow-hidden w-full aspect-video"
 			/>
-			<p className="text-white/70 duration-1000 transition-all font-montserrat my-1 text-sm md:text-sm line-clamp-3">
+			<p className="text-white/70 duration-1000 transition-all  my-1 text-sm md:text-sm line-clamp-3">
 				{summary.short}
 			</p>
 			<div className="flex items-center justify-between w-full sm:mx-2">
-				<span className="border-white/20 border font-montserrat hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
+				<span className="border-white/20 border  hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
 					<Link
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/projects/${id}`}
@@ -69,7 +69,7 @@ const ProjectContainer = ({
 						<Link
 							href={link.link}
 							key={link.link}
-							className="p-1.5 hover:bg-gray-900 rounded font-montserrat text-[10px] font-medium tracking-wider"
+							className="p-1.5 hover:bg-gray-900 rounded  text-[10px] font-medium tracking-wider"
 						>
 							<Image
 								src={link.linkImage}

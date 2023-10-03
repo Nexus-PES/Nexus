@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
 	font-family: "Inter";
 	src: url("/fonts/Inter/Inter-Thin.ttf") format("ttf");
 	font-weight: 100;
@@ -63,33 +63,31 @@
   src: url("/fonts/Montserrat/Montserrat-Black.ttf") format("ttf");
   font-weight: 900;
   font-style: normal;
-}
+} */
 
 @font-face {
-  font-family: "Bricolage";
-  src: url('/fonts/Bricolage/BricolageGrotesque_28pt-Regular.ttf') format('ttf');
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Bricolage";
+	src: url("/fonts/Bricolage/BricolageGrotesque_28pt-Regular.ttf")
+		format("ttf");
+	font-weight: 400;
+	font-style: normal;
 }
 @font-face {
-  font-family: "Bricolage";
-  src: url('/fonts/Bricolage/BricolageGrotesque_18pt_Condensed-Bold.ttf') format('ttf');
-  font-weight: 700;
-  font-style: normal;
+	font-family: "Bricolage";
+	src: url("/fonts/Bricolage/BricolageGrotesque_18pt_Condensed-Bold.ttf")
+		format("ttf");
+	font-weight: 700;
+	font-style: normal;
 }
 
-  .carousel-container .thumbs-wrapper {
-    display: none !important; 
-    height: 0 !important;
-    padding: 0 !important; 
-    margin: 0 !important;
-    overflow: hidden !important; 
-  }
-  .carousel .control-arrow:hover {
-    background-color: transparent !important;
-    transform: scale(1.5) !important;
-
-  }
- 
-
-  
+.carousel-container .thumbs-wrapper {
+	display: none !important;
+	height: 0 !important;
+	padding: 0 !important;
+	margin: 0 !important;
+	overflow: hidden !important;
+}
+.carousel .control-arrow:hover {
+	background-color: transparent !important;
+	transform: scale(1.5) !important;
+}

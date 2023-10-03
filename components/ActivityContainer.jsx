@@ -13,7 +13,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 					<h1 className="font-inter bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text font-extrabold text-xl">
 						{eventName}
 					</h1>
-					<h3 className="font-montserrat text-xs font-medium tracking-wider">
+					<h3 className=" text-xs font-medium tracking-wider">
 						{date.toLocaleDateString("en-GB")}
 					</h3>
 				</div>
@@ -40,7 +40,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 			</Carousel>
 
 			<div className="flex items-center justify-between w-full sm:mx-2">
-				<span className="border-white/20 border font-montserrat hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
+				<span className="border-white/20 border  hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
 					<Link
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/events/${id}`}
@@ -57,7 +57,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 				</span>
 
 				<div className="h-full flex items-center gap-3">
-					{/* <span className="font-montserrat font-medium md:font-semibold text-sm md:text-md">
+					{/* <span className=" font-medium md:font-semibold text-sm md:text-md">
 						{likes}
 					</span> */}
 					<div className="border-[1px] h-[2rem] w-[2rem] border-white/20 rounded-md flex items-center justify-center">
@@ -70,7 +70,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 						/>
 					</div>
 					<button
-						className="p-1.5 border-[1px] border-white/20 hover:bg-gray-900 rounded font-montserrat text-[10px] font-medium tracking-wider"
+						className="p-1.5 border-[1px] border-white/20 hover:bg-gray-900 rounded  text-[10px] font-medium tracking-wider"
 						onClick={() => setOpenDesc((prev) => !prev)}
 					>
 						<Image
@@ -90,7 +90,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 				<p
 					className={`${
 						openDesc ? "text-white/70" : "text-transparent"
-					} duration-1000 transition-all font-montserrat my-1 text-sm md:text-sm line-clamp-3`}
+					} duration-1000 transition-all  my-1 text-sm md:text-sm line-clamp-3`}
 				>
 					{summary}
 				</p>

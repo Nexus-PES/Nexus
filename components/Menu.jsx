@@ -35,7 +35,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "text-white bg-[#0a0a0a] font-montserrat" : "text-white"
+                      active ? "text-white bg-[#0a0a0a] " : "text-white"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/">HOME</Link>
@@ -47,7 +47,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? " text-white bg-background font-montserrat" : "text-white"
+                      active ? " text-white bg-background " : "text-white"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/about">ABOUT</Link>
@@ -58,7 +58,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? " text-white bg-background font-montserrat" : "text-white"
+                      active ? " text-white bg-background " : "text-white"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/discover">DISCOVER</Link>
@@ -69,7 +69,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? " text-white bg-background font-montserrat " : "text-white"
+                      active ? " text-white bg-background  " : "text-white"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/projects">PROJECTS</Link>
@@ -80,7 +80,7 @@ export default function Example() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? " text-white bg-background font-montserrat" : "text-white"
+                      active ? " text-white bg-background " : "text-white"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/events">EVENTS</Link>

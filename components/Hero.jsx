@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<div className="flex flex-col justify-center items-center mt-32 mb-20">
 			<p className="text-4xl md:text-5xl text-balance text-center font-bold">
-				&quot;Unlocking Tomorrow's Technology Today!&quot;
+				&quot;Unlocking Tomorrow&apos;s Technology Today!&quot;
 			</p>
 			{/* <p className="text-[50px] leading-[65px]  font-black text-primary "> */}
 			<p className="text-4xl md:text-5xl lg:text-6xl mt-5 mb-6 text-center font-extrabold bg-gradient-to-r from-primary via-blue-600 to-secondary text-transparent bg-clip-text animate-gradient">

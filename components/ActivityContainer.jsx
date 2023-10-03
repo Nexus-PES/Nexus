@@ -10,12 +10,12 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 		<div className="flex flex-col gap-y-2 sm:gap-y-3 justify-center items-center border-white/10 border-[1px] rounded-md p-2 sm:px-3 md:py-3 md:px-5 hover:shadow-lg">
 			<div className="flex items-center justify-between w-full mt-1.5 mb-1 sm:mb-1.5">
 				<div>
-					<h1 className="font-inter bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text font-extrabold text-xl">
+					<h1 className=" bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text font-extrabold text-xl">
 						{eventName}
 					</h1>
-					<h3 className=" text-xs font-medium tracking-wider">
+					<p className="text-xxs">
 						{date.toLocaleDateString("en-GB")}
-					</h3>
+					</p>
 				</div>
 			</div>
 			<Carousel
@@ -40,12 +40,12 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 			</Carousel>
 
 			<div className="flex items-center justify-between w-full sm:mx-2">
-				<span className="border-white/20 border  hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
+				<span className="border-white/20 border hover:bg-gray-800/50 group rounded-md transition-all py-0.5 px-2">
 					<Link
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/events/${id}`}
 					>
-						<span className="text-sm">Learn More</span>
+						<span className="text-xxs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"
 							width={30}
@@ -78,9 +78,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 							width={16}
 							height={16}
 							alt="open description"
-							className={`transition-all ${
-								openDesc ? "-rotate-45" : ""
-							} transform `}
+							className={`transition-all transform ${openDesc && "-rotate-45"}`}
 						/>
 					</button>
 				</div>
@@ -90,7 +88,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 				<p
 					className={`${
 						openDesc ? "text-white/70" : "text-transparent"
-					} duration-1000 transition-all  my-1 text-sm md:text-sm line-clamp-3`}
+					} duration-1000 transition-all text-xs my-1`}
 				>
 					{summary}
 				</p>

@@ -30,7 +30,7 @@ const Projects = () => {
 				<Button
 					size="lg"
 					// variant="outline"
-					className="w-full my-8 md:w-1/2 font-medium "
+					className="w-full my-8 md:w-3/4"
 					href="/projects"
 				>
 					Show More

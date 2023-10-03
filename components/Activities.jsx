@@ -24,7 +24,7 @@ const Activities = () => {
 				<Button
 					size="lg"
 					// variant="outline"
-					className="w-full my-8 md:w-1/2"
+					className="w-full my-8 md:w-3/4"
 					href="/activities"
 				>
 					Show More

@@ -20,6 +20,9 @@ module.exports = {
 				inter: "Inter, sans-serif",
 				bricolage: "Bricolage, sans-serif",
 			},
+			fontSize: {
+				"xxs": ['11px']
+			},
 			backgroundImage: {
 				"gradient-linear": "linear-gradient(#009efd, #006dfa)",
 			},

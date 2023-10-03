@@ -45,16 +45,16 @@ const ProjectContainer = ({
 				alt={projectName}
 				className="z-20 object-cover rounded-md overflow-hidden w-full aspect-video"
 			/>
-			<p className="text-white/70 duration-1000 transition-all  my-1 text-sm md:text-sm line-clamp-3">
+			<p className="text-white/70 duration-1000 transition-all my-1 text-xs line-clamp-3 leading-5">
 				{summary.short}
 			</p>
 			<div className="flex items-center justify-between w-full sm:mx-2">
-				<span className="border-white/20 border  hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
+				<span className="border-white/20 border hover:bg-gray-800/50 group rounded-md transition-all py-0.5 px-2">
 					<Link
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/projects/${id}`}
 					>
-						<span className="text-sm">Learn More</span>
+						<span className="text-xxs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"
 							width={30}
@@ -69,7 +69,7 @@ const ProjectContainer = ({
 						<Link
 							href={link.link}
 							key={link.link}
-							className="p-1.5 hover:bg-gray-900 rounded  text-[10px] font-medium tracking-wider"
+							className="p-1.5 hover:bg-gray-900 rounded text-xs font-medium tracking-wider"
 						>
 							<Image
 								src={link.linkImage}
@@ -81,7 +81,7 @@ const ProjectContainer = ({
 						</Link>
 					))}
 				</div>
-				</div>
+			</div>
 		</div>
 	);
 };

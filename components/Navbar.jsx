@@ -34,7 +34,7 @@ const Navbar = () => {
 				</ul>
 				<Button
 					size="sm"
-					className="text-sm md:text-base font-bold py-30 px-6 md:px-10 justify-self-end"
+					className="text-sm md:text-base font-semibold py-30 px-6 md:px-10 justify-self-end"
 				>
 					Login
 				</Button>

@@ -8,8 +8,10 @@ export const projectData = [
 			long: "Web Development",
 		},
 		projectImage: "/images/projects/note-vault-preview.png",
-		summary:
-			"NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.",
+		summary: {
+			short: "NoteVault is a web-app that allows you to take down notes, store them and access them whenever and wherever you want. It comes in with features like Markdown Formatting and many more to come",
+			long: "NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.NoteVault is a versatile note-taking platform designed to enhance organization and idea connectivity. It empowers users to create, link, and manage notes efficiently, fostering better understanding and exploration of their thoughts.",
+		},
 		links: [
 			{
 				name: "Github",
@@ -33,7 +35,10 @@ export const projectData = [
 		},
 		projectImage: "/images/projects/nexus-website-preview.png",
 		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+		{
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+		},
 		links: [
 			{
 				name: "Github",
@@ -56,8 +61,10 @@ export const projectData = [
 			long: "Web Development",
 		},
 		projectImage: "/images/events/unsplash_-HIiNFXcbtQ.png",
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+		},
 		links: [
 			{
 				name: "Github",
@@ -80,8 +87,10 @@ export const projectData = [
 			long: "Web Development",
 		},
 		projectImage: "/images/events/unsplash_-HIiNFXcbtQ.png",
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+		},
 		links: [
 			{
 				name: "Github",
@@ -96,6 +105,13 @@ export const projectData = [
 		],
 	},
 ];
+
+
+var idList = projectData.map((project) => (project.id))
+
+const randomIndex = Math.floor(Math.random() * idList.length)
+
+export const idOfDay = idList[randomIndex]
 
 export const activityData = [
 	{

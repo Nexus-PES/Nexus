@@ -46,7 +46,7 @@ const ProjectContainer = ({
 				className="z-20 object-cover rounded-md overflow-hidden w-full aspect-video"
 			/>
 			<p className="text-white/70 duration-1000 transition-all font-montserrat my-1 text-sm md:text-sm line-clamp-3">
-				{summary}
+				{summary.short}
 			</p>
 			<div className="flex items-center justify-between w-full sm:mx-2">
 				<span className="border-white/20 border font-montserrat hover:bg-gray-800/50 group rounded-md transition-all py-1 px-2">
@@ -80,32 +80,8 @@ const ProjectContainer = ({
 							<span className="sr-only">{link.name} link</span>
 						</Link>
 					))}
-					{/* <button
-						className="p-1.5  border-[1px] border-white/20 hover:bg-gray-900 rounded font-montserrat text-[10px] font-medium tracking-wider"
-						onClick={() => setOpenDesc((prev) => !prev)}
-					>
-						<Image
-							src="/images/icons/cross.svg"
-							width={16}
-							height={16}
-							alt="open description"
-							className={`transition-all ${
-								openDesc ? "rotate-45" : ""
-							} transform `}
-						/>
-					</button>
-				*/}
 				</div>
-			</div>
-			{/* {openDesc && (
-				<p
-					className={`${
-						openDesc ? "text-white/70" : "text-transparent"
-					} duration-1000 transition-all font-montserrat my-1 text-xs sm:text-sm md:text-sm line-clamp-3`}
-				>
-					{summary}
-				</p>
-			)}  */}
+				</div>
 		</div>
 	);
 };

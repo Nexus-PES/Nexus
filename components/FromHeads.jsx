@@ -4,22 +4,22 @@ import { headCommentData } from "./data";
 
 export default function FromHeads() {
 	return (
-		<div className="phone:p-1 my-6 p-[0.5]">
-			<h1 className="font-bold text-2xl  mb-4 mt-12">
+		<div className="my-6">
+			<h1 className="font-semibold text-2xl md:text-3xl mb-4  mt-12">
 				From Our
 				<span className="font-bold ml-2 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 					Heads
 				</span>
 			</h1>
 
-			<div className="xl:columns-4 lg:columns-3 columns-1 sm:columns-2 gap-4 mx-auto space-y-3 pb-28">
+			<section className="xl:columns-4 lg:columns-3 columns-1 sm:columns-2 gap-4 mx-auto space-y-3 pb-28">
 				{headCommentData.map((head) => (
 					<Heads
 						key={head.domain}
 						{...head}
 					/>
 				))}
-			</div>
+			</section>
 		</div>
 	);
 }
@@ -42,7 +42,7 @@ const Heads = (props) => {
 		tag= "volunteer"
 	}
 	return (
-		<article className="transition-colors break-inside-avoid border-white/20 border-[1px] rounded-md p-6 hover:bg-white/10">
+		<div className="transition-colors break-inside-avoid border-white/10 border-[1px] rounded-md p-4 hover:bg-white/5">
 			<div className="flex gap-4">
 				<span className="relative ">
 					<Image
@@ -66,18 +66,18 @@ const Heads = (props) => {
 					</h2>
 
 					<div className="flex justify-between items-center my-0.5">
-						<p className="text-xs font-medium tracking-wide font-inter text-text-secondary">
+						<p className="text-xs font-medium text-secondary">
 							{props.domain}
 						</p>
-						<p className="text-[12px]  flex items-center text-white bg-gradient-to-br from-primary to-secondary font-semibold rounded-2xl py-[1px] px-3">
+						<p className="text-xxs flex items-center text-white bg-gradient-to-br -mb-1 from-primary to-secondary font-semibold rounded-2xl py-[1px] px-3">
 							{tag.toUpperCase()}
 						</p>
 					</div>
 				</article>
 			</div>
-			<div className="text-sm mt-2.5 font-inter text-white/80 leading-6">
+			<div className="text-xs mt-2.5 font-inter text-white/80 leading-5 ">
 				<p>{props.message}</p>
 			</div>
-		</article>
+		</div>
 	);
 };

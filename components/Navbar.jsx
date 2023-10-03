@@ -9,9 +9,12 @@ const Navbar = () => {
 				<div className="md:hidden justify-self-start">
 					<Menu />
 				</div>
-				<h1 className="font-bold text-lg justify-self-center md:justify-self-start">
+				<Link
+					href="/"
+					className="font-bold text-lg justify-self-center md:justify-self-start"
+				>
 					NEXUS
-				</h1>
+				</Link>
 				<ul className="hidden md:flex md:gap-5  md:justify-between  md:h-full md:items-center md:text-[12px] md:font-bold">
 					<li className="uppercase">
 						<Link href="/">home</Link>

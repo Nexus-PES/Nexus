@@ -1,20 +1,36 @@
-import React from 'react'
-import Link from 'next/link';
-import { Button } from './Button';
+import React from "react";
+import Link from "next/link";
+import { Button } from "./Button";
 
 const Hero = () => {
-  return (
-    <div className='flex flex-col justify-center items-center'>
-      <p className='text-[40px] sm:text-[50px] leading-10  font-bold'>I don&apos;t know how to put</p>
-      <p className='text-[50px] leading-[65px]  font-black text-[#009EFD] '>NEXUS CLUB</p>
-      <div className='mt-5'>
-  
-        <Button className="px-[22px] mx-5 text-black bg-white " href='/about'>click me</Button>
-        <Button href='/about'>click button</Button>
+	return (
+		<div className="flex flex-col justify-center items-center mt-32 mb-20">
+			<p className="text-4xl md:text-5xl text-balance text-center font-bold">
+				"Unlocking Tomorrow's Technology Today!"
+			</p>
+			{/* <p className="text-[50px] leading-[65px]  font-black text-primary "> */}
+			<p className="text-4xl md:text-5xl lg:text-6xl mt-5 mb-6 text-center font-extrabold bg-gradient-to-r from-primary via-blue-600 to-secondary text-transparent bg-clip-text animate-gradient">
+				NEXUS CLUB
+			</p>
+			<div className="gap-x-4 flex">
+				<Button
+					size="lg"
+					className="min-w-[10rem] md:w-[15rem]"
+					variant="outline"
+					href="/projects"
+				>
+					Project
+				</Button>
+				<Button
+					size="lg"
+					className="min-w-[10rem] md:w-[15rem]"
+					href="/events"
+				>
+					Events
+				</Button>
+			</div>
+		</div>
+	);
+};
 
-      </div>
-    </div>
-  )
-}
-
-export default Hero
+export default Hero;

@@ -49,7 +49,7 @@ const ProjectContainer = ({
 				{summary.short}
 			</p>
 			<div className="flex items-center justify-between w-full sm:mx-2">
-				<span className="border-white/20 border hover:bg-gray-800/50 group rounded-md transition-all py-0.5 px-2">
+				<span className="border-white/20 border hover:bg-gray-800/50 group rounded-md transition-all py-1 md:py-0.5 px-2">
 					<Link
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/projects/${id}`}

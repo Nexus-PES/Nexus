@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import { faqData } from "./data";
 
 const Faq = () => {
 	return (
-		<div className="">
+		<div className="w-full">
 			<h1 className="font-bold text-2xl font-montserrat mb-4 mt-12 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 				FAQ
 			</h1>
@@ -14,38 +15,13 @@ const Faq = () => {
 };
 
 const FaqBox = () => {
-	const faqData = [
-		{
-			question: "What is the name of the technical club at PES College?",
-			answer: "The technical club at PES College is called Nexus.",
-		},
-		{
-			question: "How can I join the technical club?",
-			answer: "To join the technical club, you can [provide information on the joining process].",
-		},
-		{
-			question: "What activities does the technical club organize?",
-			answer: "The technical club organizes various activities such as workshops, seminars, coding competitions, and tech talks.",
-		},
-		{
-			question: "Who can join the technical club?",
-			answer: "The technical club is open to all students of PES College who have an interest in technology and related fields.",
-		},
-		{
-			question: "When and where are the club meetings held?",
-			answer: "Club meetings are typically held [mention frequency, day, and location]. However, please check our official announcements for the most up-to-date information.",
-		},
-		{
-			question: "Is there a membership fee to join the technical club?",
-			answer: "Yes, there might be a nominal membership fee to cover club expenses. The exact amount can vary, so please check with the club organizers for the current fee.",
-		},
-	];
+
 
 	const FaqBox = ({ question, answer }) => {
 		const [toggle, setToggle] = useState(false);
 
 		return (
-			<li
+			<div
 				className="px-4 py-5 flex flex-col border-gray-800 border hover:bg-gray-700 rounded font-poppins text-xs cursor-pointer"
 				onClick={() => setToggle((prev) => !prev)}
 			>
@@ -70,19 +46,20 @@ const FaqBox = () => {
 						{answer}
 					</p>
 				)}
-			</li>
+			</div>
 		);
 	};
 
+
 	return (
-		<ul className="space-y-2 w-full">
+		<div className="space-y-2">
 			{faqData.map((item, index) => (
 				<FaqBox
 					key={index}
 					{...item}
 				/>
 			))}
-		</ul>
+		</div>
 	);
 };
 

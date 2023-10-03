@@ -275,3 +275,49 @@ export const headCommentData = [
 			"EVM 10 is your hub for exploring the role of blockchain in healthcare. Let's envision a healthier future together through innovative solutions. EVM 10 is your hub for exploring the role of blockchain in healthcare. Let's envision a healthier future together through innovative solutions. EVM 10 is your hub for exploring the role of blockchain in healthcare. Let's envision a healthier future together through innovative solutions. EVM 10 is your hub for exploring the role of blockchain in healthcare. Let's envision a healthier future together through innovative solutions. EVM 10 is your hub for exploring the role of blockchain in healthcare. Let's envision a healthier future together through innovative solutions.",
 	},
 ];
+
+export const faqData = [
+	{
+		question: "What is the name of the technical club at PES College?",
+		answer: "The technical club at PES College is called Nexus.",
+	},
+	{
+		question: "How can I join the technical club?",
+		answer: "To join the technical club, you can [provide information on the joining process].",
+	},
+	{
+		question: "What activities does the technical club organize?",
+		answer: "The technical club organizes various activities such as workshops, seminars, coding competitions, and tech talks.",
+	},
+	{
+		question: "Who can join the technical club?",
+		answer: "The technical club is open to all students of PES College who have an interest in technology and related fields.",
+	},
+	{
+		question: "When and where are the club meetings held?",
+		answer: "Club meetings are typically held [mention frequency, day, and location]. However, please check our official announcements for the most up-to-date information.",
+	},
+	{
+		question: "Is there a membership fee to join the technical club?",
+		answer: "Yes, there might be a nominal membership fee to cover club expenses. The exact amount can vary, so please check with the club organizers for the current fee.",
+	},
+];
+
+
+export const goalsData = [
+	{
+		heading: "Foster Innovation",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat numquam alias animi ab minus facilis molestiae sapiente soluta quia. Maxime magnam illo nulla architecto quasi porro est repellat quibusdam!",
+	},
+	{
+		heading: "Foster Innovation",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat numquam alias animi ab minus facilis molestiae sapiente soluta quia. Maxime magnam illo nulla architecto quasi porro est repellat quibusdam!",
+	},
+	{
+		heading: "Foster Innovation",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat numquam alias animi ab minus facilis molestiae sapiente soluta quia. Maxime magnam illo nulla architecto quasi porro est repellat quibusdam!",
+	},
+];

@@ -2,7 +2,7 @@
 
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { AiOutlineDown } from "react-icons/ai";
+
 import { AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";
 
@@ -12,9 +12,6 @@ export default function Example() {
       <Menu as="div" className="flex justify-center">
         <div>
           <div>
-            <Menu.Button className="justify-center rounded-md  bg-opacity-20 text-sm font-medium text-white  ">
-              <AiOutlineDown className=" hidden sm:hidden lg:hidden " />
-            </Menu.Button>
             <Menu.Button className="justify-center rounded-md  bg-opacity-20  text-sm font-medium text-white">
               <AiOutlineMenu className=" md:hidden text-2xl font-extrabold" />
               <span className="sr-only">Menu</span>
@@ -32,7 +29,7 @@ export default function Example() {
         >
           <Menu.Items className="absolute left-4 mt-12  w-[13rem] origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-[#0a0a0a] z-50">
             <div className="px-1 py-1 ">
-              <Menu.Item> 
+              <Menu.Item>
                 {({ active }) => (
                   <button
                     className={`${
@@ -40,7 +37,6 @@ export default function Example() {
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     <Link href="/">HOME</Link>
-                    
                   </button>
                 )}
               </Menu.Item>

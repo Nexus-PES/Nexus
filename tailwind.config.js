@@ -22,7 +22,7 @@ module.exports = {
 			},
 			fontSize: {
 				xxs: ["11px"],
-				clamp: "clamp(2.25rem, 10vw, 4rem)",
+				clamp: "clamp(2.8rem, 10vw, 4rem)",
 			},
 			backgroundImage: {
 				"gradient-linear": "linear-gradient(#009efd, #006dfa)",

@@ -1,6 +1,6 @@
 import ActivityContainer from "./ActivityContainer";
 import { Button } from "./Button";
-import { activityData } from "./data";
+import { activityData } from "../data";
 
 const Activities = () => {
 	return (

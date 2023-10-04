@@ -1,10 +1,9 @@
 import { Button } from "./Button";
 import ProjectContainer from "./ProjectContainer";
-import { projectData } from "./data";
+import { projectData } from "../data";
 
 const Projects = () => {
-	const firstThree =
-		projectData.slice(0, 3);
+	const firstThree = projectData.slice(0, 3);
 
 	return (
 		<div>

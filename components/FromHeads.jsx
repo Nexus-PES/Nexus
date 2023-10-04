@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { headCommentData } from "./data";
+import { headCommentData } from "../data";
 
 export default function FromHeads() {
 	return (
@@ -29,17 +29,16 @@ const Heads = (props) => {
 
 	if (props.role === "head") {
 		role_icon = { url: "/images/icons/star.svg", alt: "star" };
-		tag= "head"
-	}
-	else if (props.role === "domain head") {
+		tag = "head";
+	} else if (props.role === "domain head") {
 		role_icon = { url: "/images/icons/star.svg", alt: "star" };
-		tag= "domain head"
+		tag = "domain head";
 	} else if (props.role === "core") {
 		role_icon = { url: "/images/icons/thunder.svg", alt: "thunder" };
-		tag= "core"
+		tag = "core";
 	} else {
 		role_icon = { url: "/images/icons/user.svg", alt: "user" };
-		tag= "volunteer"
+		tag = "volunteer";
 	}
 	return (
 		<div className="transition-colors break-inside-avoid border-white/10 border-[1px] rounded-md p-4 hover:bg-white/5">

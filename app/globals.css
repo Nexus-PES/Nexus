@@ -112,39 +112,6 @@
 	background-color: red;
 }
 
-@media screen and (max-width: 480px) {
-	.box {
-		background-color: yellow;
-	}
-	.main {
-		background: linear-gradient(to right, #181818 0.5px, transparent 1px),
-			linear-gradient(to bottom, #181818 0.5px, transparent 1px);
-		background-size: 20px 20px;
-	}
-
-	.gradient {
-		height: fit-content;
-		z-index: -3;
-		width: 100%;
-		max-width: 640px;
-		background-image: 
-		radial-gradient(at 27% 37%,hsl(203, 100%, 50%, 1) 50px,transparent 0%),
-		radial-gradient(at 97% 21%, hsl(214, 100%, 49%, 1) 0px, transparent 50%),
-		radial-gradient(at 52% 99%, hsl(245, 58%, 51%, 1) 0%, transparent 50%),
-		radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-		radial-gradient(at 97% 96%, hsl(335, 78%, 42%, 1) 0px, transparent 50%),
-		radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-		radial-gradient(at 79% 53%, hsl(263, 69%, 42%, 1) 0px, transparent 50%);
-		position: absolute;
-		content: "";
-		width: 100%;
-		height: 100%;
-		filter: blur(100px) saturate(150%);
-		top: 20px;
-		opacity: 0.5;
-	}
-}
-
 .gradient {
 	height: fit-content;
 	z-index: -3;
@@ -170,6 +137,63 @@
 	opacity: 0.15;
 }
 
-.glassmorphism {
-	@apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+@media screen and (max-width: 480px) {
+	.box {
+		background-color: yellow;
+	}
+	.main {
+		background: linear-gradient(to right, #181818 0.5px, transparent 1px),
+			linear-gradient(to bottom, #181818 0.5px, transparent 1px);
+		background-size: 20px 20px;
+	}
+
+	.gradient {
+		height: fit-content;
+		z-index: -3;
+		width: 100%;
+
+		max-width: 640px;
+		background-image: radial-gradient(
+				at 27% 37%,
+				hsl(203, 100%, 50%, 1) 50px,
+				transparent 0%
+			),
+			radial-gradient(
+				at 97% 21%,
+				hsl(214, 100%, 49%, 1) 0px,
+				transparent 50%
+			),
+			radial-gradient(
+				at 52% 99%,
+				hsl(245, 58%, 51%, 1) 0%,
+				transparent 50%
+			),
+			radial-gradient(
+				at 10% 29%,
+				hsla(256, 96%, 67%, 1) 0px,
+				transparent 50%
+			),
+			radial-gradient(
+				at 97% 96%,
+				hsl(335, 78%, 42%, 1) 0px,
+				transparent 50%
+			),
+			radial-gradient(
+				at 33% 50%,
+				hsla(222, 67%, 73%, 1) 0px,
+				transparent 50%
+			),
+			radial-gradient(
+				at 79% 53%,
+				hsl(263, 69%, 42%, 1) 0px,
+				transparent 50%
+			);
+		position: absolute;
+		content: "";
+		width: 100%;
+		height: 100%;
+		filter: blur(100px) saturate(150%);
+		top: 20px;
+		opacity: 0.5;
+	}
 }

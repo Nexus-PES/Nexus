@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { faqData } from "@/data";
+import { faqData } from "../data";
 
 const Faq = () => {
 	return (
 		<div className="w-full">
-			<h1 className="font-bold text-2xl  mb-4 mt-12 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
+			<h1 className="font-semibold text-2xl md:text-3xl mb-4  mt-12 ml-2 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 				FAQ
 			</h1>
 			<FaqBox />
@@ -15,14 +15,12 @@ const Faq = () => {
 };
 
 const FaqBox = () => {
-
-
 	const FaqBox = ({ question, answer }) => {
 		const [toggle, setToggle] = useState(false);
 
 		return (
 			<div
-				className="px-4 py-5 flex flex-col border-gray-800 border hover:bg-gray-700 rounded font-poppins text-xs cursor-pointer"
+				className="px-4 py-5 flex flex-col border-gray-800 border hover:bg-white/10 transition-colors rounded font-poppins text-xs cursor-pointer"
 				onClick={() => setToggle((prev) => !prev)}
 			>
 				<div className="flex justify-between text-md  items-start gap-x-4">
@@ -49,7 +47,6 @@ const FaqBox = () => {
 			</div>
 		);
 	};
-
 
 	return (
 		<div className="space-y-2">

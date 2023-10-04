@@ -19,7 +19,7 @@ const Hero = () => {
 			<div className="gap-x-4 w-full mt-5 items-center justify-center flex gap-y-4 flex-col sm:flex-row">
 				<Button
 					size="lg"
-					className="w-full sm:w-40 bg-background"
+					className="w-4/5 sm:w-40 bg-background/50 backdrop-blur-sm shadow"
 					variant="outline"
 					href="/projects"
 				>
@@ -27,7 +27,7 @@ const Hero = () => {
 				</Button>
 				<Button
 					size="lg"
-					className="w-full sm:w-40"
+					className="w-4/5 sm:w-40 shadow"
 					href="/events"
 				>
 					Events

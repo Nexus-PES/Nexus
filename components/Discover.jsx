@@ -26,7 +26,7 @@ const Discover = () => {
 			{discover_data.map((discover, i) => (
 				<div
 					key={i}
-					className="p-5 border-[1px] rounded-lg border-white/20 h-[200px] bg-shaded w-full flex justify-between flex-col hover:bg-white/10"
+					className="p-5 border-[1px] rounded-lg border-white/20 h-52 bg-background/20 backdrop-blur w-full flex justify-between flex-col hover:bg-white/10 transition-colors"
 				>
 					<Image
 						src="/images/icons/leaf.svg"

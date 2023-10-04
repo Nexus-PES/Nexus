@@ -41,7 +41,7 @@ const Heads = (props) => {
 		tag = "volunteer";
 	}
 	return (
-		<div className="transition-colors break-inside-avoid border-white/10 border-[1px] rounded-md p-4 hover:bg-white/5">
+		<div className="transition-colors break-inside-avoid border-white/10 border-[1px] backdrop-blur-md rounded-md p-4 hover:bg-white/5">
 			<div className="flex gap-4">
 				<span className="relative ">
 					<Image

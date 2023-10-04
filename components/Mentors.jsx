@@ -47,7 +47,7 @@ const memberData = [
 const Mentors = () => {
 	return (
 		<>
-			<h1 className="font-bold text-2xl  mb-4 mt-12">
+			<h1 className="font-semibold text-2xl md:text-3xl mb-4  mt-12">
 				Our
 				<span className="font-bold ml-2 bg-gradient-to-b from-primary to-secondary inline-block text-transparent bg-clip-text">
 					Mentors

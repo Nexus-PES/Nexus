@@ -1,7 +1,7 @@
 "use client";
 
 import { Menu, Transition } from "@headlessui/react";
-import { Fragment, useEffect, useRef, useState } from "react";
+import { Fragment } from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import { AiOutlineMenu } from "react-icons/ai";
 import Link from "next/link";

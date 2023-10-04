@@ -4,7 +4,7 @@ import Link from "next/link";
 import {
 	idOfDay,
 	projectData,
-} from "./data";
+} from "../data";
 
 const ProjectOfDay = () => {
 	// const [idOfDay, setIdOfDay] =

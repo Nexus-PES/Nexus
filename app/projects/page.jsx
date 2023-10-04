@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { projectData } from "../../components/data";
-import ProjectContainer from "../../components/ProjectContainer";
+import { projectData } from "@/data";
+import ProjectContainer from "@/components/ProjectContainer";
 import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectPage = () => {

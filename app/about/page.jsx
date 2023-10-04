@@ -1,10 +1,9 @@
 import React from "react";
-import Mentors from "../../components/Mentors";
-import Goals from "../../components/Goals";
-import Faq from "../../components/Faq";
-import AboutHero from "../../components/AboutHero";
-import Discover from "../../components/Discover";
-import Navbar from "../../components/Navbar";
+import Mentors from "@/components/Mentors";
+import Goals from "@/components/Goals";
+import Faq from "@/components/Faq";
+import AboutHero from "@/components/AboutHero";
+import Discover from "@/components/Discover";
 
 const About = () => {
 	return (

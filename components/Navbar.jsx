@@ -1,7 +1,7 @@
-import React from "react";
 import { Button } from "./Button";
 import Menu from "./Menu";
 import Link from "next/link";
+
 const Navbar = () => {
 	return (
 		<>

@@ -2,14 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { projectData } from "../../../components/data";
+import { projectData } from "@/components/data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faArrowLeft,
 	faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/navigation";
-import Paragraphs from "../../../components/Paragraphs";
+import Paragraphs from "@/components/Paragraphs";
 import { Tooltip } from "react-tooltip";
 
 const ProjectDetail = ({ params }) => {

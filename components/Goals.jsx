@@ -1,5 +1,5 @@
 import React from "react";
-import { goalsData } from "./data";
+import { goalsData } from "@/data";
 
 const Goals = () => {
 	

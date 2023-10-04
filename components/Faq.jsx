@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { faqData } from "./data";
+import { faqData } from "@/data";
 
 const Faq = () => {
 	return (

@@ -11,7 +11,7 @@ export default function Home() {
 			<main className="mt-16 mx-4 sm:mx-14 md:mx-28 gap-y-10 md:gap-y-14 flex justify-center">
 				<div className="flex max-w-screen-xl flex-col">
 					<Hero />
-					<Carousel />
+					{/* <Carousel /> */}
 					<Projects />
 					<Activities />
 					<FromHeads />

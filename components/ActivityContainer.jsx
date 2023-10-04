@@ -20,8 +20,9 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 			</div>
 			<Carousel
 				withIndicators
-				className="w-full aspect-video z-30 text-white"
+				controlSize={29}
 				loop
+				className="w-full aspect-video z-30 text-white"
 			>
 				{images.map((image, i) => (
 					<Carousel.Slide

@@ -20,6 +20,7 @@
     "autoprefixer": "10.4.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "embla-carousel-autoplay": "^8.0.0-rc14",
     "embla-carousel-react": "^7.1.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",

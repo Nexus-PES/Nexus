@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { projectData } from "../../components/data";
 import ProjectContainer from "../../components/ProjectContainer";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectPage = () => {
 	const [filteredProjects, setFilteredProjects] = useState(projectData);
@@ -61,14 +61,20 @@ const ProjectPage = () => {
 					layout
 					className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4"
 				>
+				<AnimatePresence>
+
 					{filteredProjects.map((project) => (
 						<motion.div
 							layout
+							animate={{opacity: 1}}
+							initial={{opacity: 0}}
+							exit={{opacity: 0}}
 							key={project.id}
 						>
 							<ProjectContainer {...project} />
 						</motion.div>
 					))}
+				</AnimatePresence>
 				</motion.div>
 			</div>
 		</main>

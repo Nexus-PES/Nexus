@@ -54,6 +54,10 @@ const ProjectContainer = ({
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/projects/${id}`}
 					>
+						<span className="sr-only">
+							Read more about {projectName}
+						</span>
+
 						<span className="text-xxs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"

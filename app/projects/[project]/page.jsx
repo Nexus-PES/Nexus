@@ -84,7 +84,7 @@ const ProjectDetailPage = () => {
 
 	return (
 		<>
-			<div className="mx-4 my-8 md:mx-auto max-w-3xl">
+			<div className="mx-4 my-8 md:mx-auto max-w-[800px]">
 				<h1 className="mt-12 mb-10 text-3xl md:text-5xl font-bold">
 					Finding the Eulerian Cycle with Hierholzers Algorithm
 				</h1>
@@ -260,7 +260,7 @@ const ProjectDetailPage = () => {
 				</ul>
 			</div>
 
-			<div className="rounded-sm mx-4 md:mx-auto max-w-3xl bg-shaded p-8">
+			<div className="rounded-sm mx-4 md:mx-auto max-w-[800px] bg-shaded p-8">
 				<div className="w-full flex flex-col gap-y-4 my-5">
 					<h1 className="text-2xl font-semibold text-white">What to read next</h1>
 					<p className="text-text-primary text-xs md:text-sm">We got you.</p>

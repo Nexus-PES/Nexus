@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Carousel } from "@mantine/carousel";
 import Link from "next/link";
 import { useState } from "react";
+import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 
 const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 	const [openDesc, setOpenDesc] = useState(false);
@@ -23,6 +24,18 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 				controlSize={29}
 				loop
 				className="w-full aspect-video z-30 text-white"
+				nextControlIcon={
+					<>
+						<BiChevronRight className="w-6 h-6 rounded-full shadow-md -m-1 text-shaded backdrop-blue-md bg-white/50" />
+						<span className="sr-only">Next Image</span>
+					</>
+				}
+				previousControlIcon={
+					<>
+						<BiChevronLeft className="w-6 h-6 rounded-full shadow-md -m-1 text-shaded backdrop-blue-md bg-white/50" />
+						<span className="sr-only">Previous Image</span>
+					</>
+				}
 			>
 				{images.map((image, i) => (
 					<Carousel.Slide
@@ -46,6 +59,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 						className="group flex gap-x-3 hover:gap-x-4 items-center"
 						href={`/events/${id}`}
 					>
+						<span className="sr-only">Read more about {eventName}</span>
 						<span className="text-xxs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"

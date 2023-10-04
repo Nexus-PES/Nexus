@@ -4,12 +4,13 @@ import Goals from "../../components/Goals";
 import Faq from "../../components/Faq";
 import AboutHero from "../../components/AboutHero";
 import Discover from "../../components/Discover";
+import Domain from "../../components/Domain";
 
 const About = () => {
 	return (
 		<>
 			<main className="mt-16 mx-4 sm:mx-14 md:mx-28 gap-y-10 md:gap-y-14 flex justify-center">
-				<div className="flex max-w-screen-xl flex-col">
+				<div className="flex max-w-screen-xl flex-col gap-16">
 					<AboutHero />
 					<Discover />
 					{/* <Button size="sm">Sarang</Button>
@@ -21,6 +22,7 @@ const About = () => {
 					<Mentors />
 					<Goals />
 					<Faq />
+					<Domain />
 				</div>
 			</main>
 		</>

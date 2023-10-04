@@ -2,8 +2,7 @@
 
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
-import { AiOutlineDown } from "react-icons/ai";
-import { AiOutlineMenu } from "react-icons/ai";
+import { BsThreeDots } from "react-icons/bs";
 import Link from "next/link";
 
 export default function Example() {
@@ -12,11 +11,9 @@ export default function Example() {
       <Menu as="div" className="flex justify-center">
         <div>
           <div>
-            <Menu.Button className="justify-center rounded-md  bg-opacity-20 text-sm font-medium text-white  ">
-              <AiOutlineDown className=" hidden sm:hidden lg:hidden " />
-            </Menu.Button>
+            
             <Menu.Button className="justify-center rounded-md  bg-opacity-20  text-sm font-medium text-white">
-              <AiOutlineMenu className=" md:hidden text-2xl font-extrabold" />
+              <BsThreeDots className="  text-2xl font-extrabold" />
             </Menu.Button>
           </div>
         </div>
@@ -29,7 +26,7 @@ export default function Example() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute left-4 mt-12  w-[13rem] origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-[#0a0a0a] z-50">
+          <Menu.Items className="absolute right-4 mt-12 md:right-72  w-[13rem] origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-[#0a0a0a] z-50">
             <div className="px-1 py-1 ">
               <Menu.Item> 
                 {({ active }) => (

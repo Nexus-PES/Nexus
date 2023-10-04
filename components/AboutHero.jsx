@@ -11,7 +11,7 @@ const AboutHero = () => {
 			<h2 className="md:text-4xl text-3xl text-white sm:text-balance text-center font-bold">
 				&quot;Our Story: Pioneering Progress in Technology and Innovation&quot;
 			</h2>
-			<p className="mx-5 mb-8 backdrop:text-text-primary text-sm md:text-base text-center text-balance font-medium leading-5 md:leading-6">
+			<p className="mx-8 mb-8 backdrop:text-text-primary text-sm md:text-base text-center text-balance font-medium leading-5 md:leading-6">
 				Welcome to <Link href="/" className="underline">Nexus</Link>, where innovation knows
 				no bounds and creativity fuels our passion for making a
 				difference in the world of technology and engineering.

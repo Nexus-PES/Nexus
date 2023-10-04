@@ -217,15 +217,64 @@
 
 // export default ProjectDetail;
 
-
-
-
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 const page = () => {
-  return (
-    <div>page</div>
-  )
-}
+	return (
+		<div className="m-2 mx-auto max-w-3xl">
+			<h1 className="mt-12 mb-10 text-5xl font-bold">
+				Finding the Eulerian Cycle with Hierholzers Algorithm
+			</h1>
+			<Image
+				src="/images/events/unsplash_fT49QnFucQ8.png"
+				width={800}
+				height={400}
+				alt="blog"
+				className="rounded object-cover h-96"
+			/>
+			<section className="space-y-5 text-text-primary my-4 text-sm leading-6 md:text-base ">
+				<p>
+					In this blog post, I would like to explain what are function
+					objects and how they can be used to solve different problems
+					by giving examples. Overriding the call operator in a class,
+					operator (), makes it possible to call an object like an
+					ordinary function. Function objects (also known as functors)
+					are
+				</p>
+				<p>
+					In this blog post, I would like to explain what are function
+					objects and how they can be used to solve different problems
+					by giving examples. Overriding the call operator in a class,
+					operator (), makes it possible to call an object like an
+					ordinary function. Function objects (also known as functors)
+					are
+				</p>
+				<p>
+					In this blog post, I would like to explain what are function
+					objects and how they can be used to solve different problems
+					by giving examples. Overriding the call operator in a class,
+				</p>
+				<p>
+					operator. They are typically defined as classes in C++, so
+					they also enjoy the features of classes. Using only classes
+					and functions solves many problems and it is fine. But
+					sometimes function objects are easier to use and save us
+					from the burden of complex solutions. STL (Standard Template
+					Library) in C++ provides useful built-in function objects
+					and makes things easier. Understanding how they are
+					implemented under the hood gives insight and encourages us
+					to write custom function objects
+				</p>
+				<p>
+					if built-in function objects are not enough. The question is
+					in which situations do we prefer functions objects? OK, lets
+					go through the examples and see how we can use functions
+					objects for the problems.
+				</p>
+			</section>
+		</div>
+	);
+};
 
-export default page
+export default page;

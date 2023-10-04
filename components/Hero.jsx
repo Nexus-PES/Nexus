@@ -23,7 +23,7 @@ const Hero = () => {
 					variant="outline"
 					href="/projects"
 				>
-					Project
+					Projects
 				</Button>
 				<Button
 					size="lg"

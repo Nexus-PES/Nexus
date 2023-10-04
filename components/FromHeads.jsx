@@ -65,7 +65,7 @@ const Heads = (props) => {
 					</h2>
 
 					<div className="flex justify-between items-center my-0.5">
-						<p className="text-xs font-medium text-secondary">
+						<p className="text-xs font-medium text-white">
 							{props.domain}
 						</p>
 						<p className="text-xxs flex items-center text-white bg-gradient-to-br -mb-1 from-primary to-secondary font-semibold rounded-2xl py-[1px] px-3">

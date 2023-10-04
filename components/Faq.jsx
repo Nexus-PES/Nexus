@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { faqData } from "../data";
 
+import { BiChevronDown } from "react-icons/bi";
 const Faq = () => {
 	return (
 		<div className="w-full">
@@ -20,7 +21,7 @@ const FaqBox = () => {
 
 		return (
 			<div
-				className="px-4 py-5 flex flex-col border-gray-800 border hover:bg-white/10 transition-colors rounded font-poppins text-xs cursor-pointer"
+				className="px-4 py-5 flex flex-col border-gray-800 border-b hover:bg-white/5 transition-colors font-poppins text-xs cursor-pointer"
 				onClick={() => setToggle((prev) => !prev)}
 			>
 				<div className="flex justify-between text-md  items-start gap-x-4">
@@ -28,28 +29,23 @@ const FaqBox = () => {
 						{question}
 					</p>
 
-					<button className="w-6 h-6 p-1.5 rounded hover:bg-gray-900/50">
-						<Image
-							src="/images/icons/cross.svg"
-							width={45}
-							height={45}
-							alt="open description"
-							className={`${toggle && "rotate-45"}
+					<button className="w-7 h-7 p-1.5 rounded hover:bg-gray-900/50 flex justify-center items-center">
+						<BiChevronDown
+							size={"1.5rem"}
+							className={`${toggle && "rotate-180"}
 							 transition-all transform`}
 						/>
 					</button>
 				</div>
-				{toggle && (
-					<p className="mt-3 text-sm font-normal text-gray-100 font-inter">
-						{answer}
-					</p>
-				)}
+				<p className={`mt-3 text-xs text-text-primary font-normal transition ${toggle ? 'h-fit' : 'h-0'} `}>
+					{toggle &&  answer }
+				</p>
 			</div>
 		);
 	};
 
 	return (
-		<div className="space-y-2">
+		<div className="">
 			{faqData.map((item, index) => (
 				<FaqBox
 					key={index}

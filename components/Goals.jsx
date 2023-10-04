@@ -12,16 +12,16 @@ const Goals = () => {
 				</span>
 			</h1>
 
-			<div>
+			<div className="flex flex-col gap-y-3">
 				{goalsData.map((goal, i) => (
 					<div
 						key={i}
-						className="flex gap-y-1 my-2 flex-col"
+						className="flex gap-y-1 my-1.5 flex-col"
 					>
-						<h2 className="font-semibold text-xl  w-auto">
+						<h2 className="font-semibold text-lg  w-auto">
 							{goal.heading}
 						</h2>
-						<p className="text-sm  text-text-secondary mt-1">
+						<p className="text-sm text-text-secondary mt-1">
 							{goal.description}
 						</p>
 					</div>

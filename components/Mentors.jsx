@@ -1,46 +1,55 @@
 import Image from "next/image";
 import React from "react";
+import {BiLogoLinkedin} from 'react-icons/bi'
 
 const memberData = [
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development'
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile3.png",
+		domain: 'Web Development',
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
+		domain: 'Web Development',
 	},
 ];
 
@@ -80,6 +89,7 @@ const ProfilePicture = ({ name, role, imageUrl }) => {
 				src={imageUrl}
 				className="rounded-lg w-full object-cover h-80"
 			/>
+			<BiLogoLinkedin />
 			<div className="px-2 my-2 ">
 				<div className=" text-xs font-medium flex flex-row">{name}</div>
 				<div className=" text-[0.75rem] md:text-[0.6rem] text-secondary flex flex-row-reverse">

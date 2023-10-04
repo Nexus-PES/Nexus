@@ -3,7 +3,6 @@ import ProjectContainer from "./ProjectContainer";
 import { projectData } from "../data";
 
 const Projects = () => {
-	const firstThree = projectData.slice(0, 3);
 
 	return (
 		<div>
@@ -14,7 +13,7 @@ const Projects = () => {
 				</span>
 			</h1>
 			<div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-				{firstThree.map((project) => (
+				{projectData.slice(0, 3).map((project) => (
 					<ProjectContainer
 						key={project.id}
 						{...project}

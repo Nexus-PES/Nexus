@@ -17,6 +17,7 @@ export default function Example() {
             </Menu.Button>
             <Menu.Button className="justify-center rounded-md  bg-opacity-20  text-sm font-medium text-white">
               <AiOutlineMenu className=" md:hidden text-2xl font-extrabold" />
+              <span className="sr-only">Menu</span>
             </Menu.Button>
           </div>
         </div>

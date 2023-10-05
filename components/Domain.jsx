@@ -21,6 +21,7 @@ const Domain = () => {
               <div className="flex gap-4">
                 <Image
                   src={domain.image}
+                  alt="Picture of the author"
                   height={12}
                   width={12}
                   className="h-12 w-12 rounded-full"

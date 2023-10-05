@@ -159,7 +159,7 @@ const ProjectDetailPage = () => {
             </button>
           </div>
           <div className="flex gap-x-2 items-center">
-            <button className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20  hover:bg-white/10">
+            <button className=" border border-white/20 px-2 rounded-3xl  flex items-center gap-x-2   hover:bg-white/10">
               <More />
             </button>
           </div>

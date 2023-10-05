@@ -27,7 +27,7 @@ export default function Example() {
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >
-          <Menu.Items className="absolute right-[2rem] top-[21rem]  border-[1px] border-white/20 mt-12 md:top-[21rem]  w-[13rem] origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-[#0a0a0a] z-50 lg:right-[20rem] lg:top-[18rem]">
+          <Menu.Items className="absolute right-[2rem] top-[19rem] border-[1px] border-white/20 mt-12 md:top-[21rem]  w-[13rem] origin-top-right divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none bg-[#0a0a0a] z-50 lg:right-[20rem] lg:top-[18rem]">
             <div className="px-1 py-1 ">
               <Menu.Item>
                 {({ active }) => (

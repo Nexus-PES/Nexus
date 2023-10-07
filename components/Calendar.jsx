@@ -128,7 +128,7 @@ export default function Calendar() {
 			<div className="max-w-md px-0 mt-8 mx-2 sm:mx-auto md:max-w-4xl lg:max-w-6xl">
 				{/* <div className="md:grid md:grid-cols-2 lg:grid-cols-3 divide-slate-800 md:divide-x-2 "> */}
 				<div className="flex flex-col md:flex-row divide-slate-800/50 md:divide-x-2 ">
-					<div className="md:pr-4 min-w-[400px]">
+					<div className="md:pr-4 min-w-[350px] md:min-w-[400px]">
 						<div className="flex items-center">
 							<h2 className="flex-auto font-semibold text-white">
 								{format(firstDayCurrentMonth, "MMMM yyyy")}

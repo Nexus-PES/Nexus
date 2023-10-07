@@ -21,8 +21,8 @@ const About = () => {
 
 					<Mentors />
 					<Goals />
-					<Faq />
 					<Domain />
+					<Faq />
 				</div>
 			</main>
 		</>

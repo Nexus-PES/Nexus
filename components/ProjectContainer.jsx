@@ -1,7 +1,8 @@
-"use client";
-import React, { useState } from "react";
+// "use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { getLength } from "../lib";
 
 const ProjectContainer = ({
 	id,
@@ -12,8 +13,6 @@ const ProjectContainer = ({
 	summary,
 	links,
 }) => {
-	// const [openDesc, setOpenDesc] = useState(false);
-
 	return (
 		<div className="flex flex-col gap-y-2 sm:gap-y-3 justify-start items-center border-white/10 border-[1px] rounded-md p-3">
 			<div className="flex justify-between items-center w-full px-0 md:px-1">
@@ -58,7 +57,7 @@ const ProjectContainer = ({
 							Read more about {projectName}
 						</span>
 
-						<span className="text-xs">Learn More</span>
+						<span className="text-xs text-white">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"
 							width={30}
@@ -69,6 +68,8 @@ const ProjectContainer = ({
 					</Link>
 				</span>
 				<div className="flex gap-x-1.5 items-center">
+				<span className="text-xxs text-white ">{getLength(summary.long)} min read</span>
+				<span className="text-xxs text-white font-extrabold pl-1">•</span>
 					{links.map((link, i) => (
 						<Link
 							href={link.link}

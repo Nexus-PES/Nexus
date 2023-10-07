@@ -17,7 +17,7 @@ export default function Home() {
           <Projects />
           <Activities />
           <FromHeads />
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </main>
     </>

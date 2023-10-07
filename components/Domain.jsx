@@ -29,7 +29,7 @@ const Domain = () => {
                 <div className="w-full flex justify-between items-center md:text-lg">
                   <h1>{domain.name}</h1>
                   <Link href="/projects">
-                    <BsLink className="text-2xl border-[1px] rounded border-white/20 w-8 h-8  p-[0.25rem]" />
+                    <BsLink className="text-sm border-[1px] rounded border-white/20 w-8 h-8  p-[0.25rem]" />
                   </Link>
                 </div>
               </div>

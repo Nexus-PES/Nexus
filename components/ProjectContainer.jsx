@@ -58,7 +58,7 @@ const ProjectContainer = ({
 							Read more about {projectName}
 						</span>
 
-						<span className="text-xxs">Learn More</span>
+						<span className="text-xs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"
 							width={30}

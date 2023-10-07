@@ -1,55 +1,135 @@
 import Image from "next/image";
 import React from "react";
-import {BiLogoLinkedin} from 'react-icons/bi'
+import { BiLogoLinkedin } from "react-icons/bi";
 
 const memberData = [
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development'
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile3.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 	{
 		name: "Firstname Lastname",
 		role: "ROLE",
 		imageUrl: "/images/member/profile2.png",
-		domain: 'Web Development',
+		domain: "Web Development",
+		socialLinks: [
+			{
+				type: "linkedin",
+				url: "https://www.linkedin.com/in/firstname-lastname",
+			},
+			{
+				type: "github",
+				url: "www.github.com/firstname-lastname",
+			},
+		],
 	},
 ];
 
@@ -66,11 +146,8 @@ const Mentors = () => {
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-2">
 				{memberData.map((member, i) => (
 					<ProfilePicture
-						key={i}
-						name={member.name}
-						role={member.role}
-						imageUrl={member.imageUrl}
-					/>
+						key={i} {...member}
+/>
 				))}
 			</div>
 		</>
@@ -79,9 +156,10 @@ const Mentors = () => {
 
 export default Mentors;
 
-const ProfilePicture = ({ name, role, imageUrl }) => {
+const ProfilePicture = ({ domain, name, role, socialLinks, imageUrl }) => {
 	return (
-		<div className="p-1  flex flex-col justify-center">
+		<div className="p-1 flex flex-col justify-center">
+			<h2 className="text-white">{domain}</h2>
 			<Image
 				height={268}
 				width={268}
@@ -91,8 +169,10 @@ const ProfilePicture = ({ name, role, imageUrl }) => {
 			/>
 			<BiLogoLinkedin />
 			<div className="px-2 my-2 ">
-				<div className=" text-xs font-medium flex flex-row">{name}</div>
-				<div className=" text-[0.75rem] md:text-[0.6rem] text-secondary flex flex-row-reverse">
+				<div className="text-xs font-medium flex flex-row drop-shadow-lg">
+					{name}
+				</div>
+				<div className="text-xxs md:text-[0.6rem] text-secondary flex flex-row-reverse">
 					{role}
 				</div>
 			</div>

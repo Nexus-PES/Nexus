@@ -75,6 +75,8 @@ const meetings = [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Vulputate enim nulla aliquet porttitor. Dictum fusce ut placerat orci nulla pellentesque dignissim. Id aliquet risus feugiat in ante metus. Et netus et malesuada fames ac turpis egestas maecenas. Arcu ac tortor dignissim convallis aenean. Suspendisse interdum consectetur libero id faucibus. Duis ut diam quam nulla porttitor massa. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Eu lobortis elementum nibh tellus molestie nunc non. Proin fermentum leo vel orci porta non pulvinar. Tincidunt id aliquet risus feugiat in ante. Purus in massa tempor nec feugiat nisl pretium fusce. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Nam at lectus urna duis. Condimentum vitae sapien pellentesque habitant. Malesuada fames ac turpis egestas maecenas. Iaculis eu non diam phasellus vestibulum lorem sed. Vulputate sapien nec sagittis aliquam.",
 		startDatetime: "2023-10-13T14:00",
 		endDatetime: "2023-10-13T14:30",
+		addToCalendar: "www.google.com",
+        calendarMessage: "Register",
 	},
 	{
 		id: 7,
@@ -84,6 +86,18 @@ const meetings = [
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Vulputate enim nulla aliquet porttitor. Dictum fusce ut placerat orci nulla pellentesque dignissim. Id aliquet risus feugiat in ante metus. Et netus et malesuada fames ac turpis egestas maecenas. Arcu ac tortor dignissim convallis aenean. Suspendisse interdum consectetur libero id faucibus. Duis ut diam quam nulla porttitor massa. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Eu lobortis elementum nibh tellus molestie nunc non. Proin fermentum leo vel orci porta non pulvinar. Tincidunt id aliquet risus feugiat in ante. Purus in massa tempor nec feugiat nisl pretium fusce. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Nam at lectus urna duis. Condimentum vitae sapien pellentesque habitant. Malesuada fames ac turpis egestas maecenas. Iaculis eu non diam phasellus vestibulum lorem sed. Vulputate sapien nec sagittis aliquam.",
 		startDatetime: "2023-10-11T14:00",
 		endDatetime: "2023-10-11T14:30",
+        addToCalendar: "www.google.com",
+	},
+	{
+		id: 8,
+		name: "Recruitment",
+		// imageUrl: "/images/events/unsplash_-HIiNFXcbtQ.png",
+		description:
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Iaculis eu non diam phasellus vestibulum lorem sed risus ultricies. Vulputate enim nulla aliquet porttitor. Dictum fusce ut placerat orci nulla pellentesque dignissim. Id aliquet risus feugiat in ante metus. Et netus et malesuada fames ac turpis egestas maecenas. Arcu ac tortor dignissim convallis aenean. Suspendisse interdum consectetur libero id faucibus. Duis ut diam quam nulla porttitor massa. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed. Eu lobortis elementum nibh tellus molestie nunc non. Proin fermentum leo vel orci porta non pulvinar. Tincidunt id aliquet risus feugiat in ante. Purus in massa tempor nec feugiat nisl pretium fusce. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Nam at lectus urna duis. Condimentum vitae sapien pellentesque habitant. Malesuada fames ac turpis egestas maecenas. Iaculis eu non diam phasellus vestibulum lorem sed. Vulputate sapien nec sagittis aliquam.",
+		startDatetime: "2023-10-20T14:00",
+		// endDatetime: "2023-10-20T14:30",
+        addToCalendar: "www.google.com",
+        calendarMessage: "Register",
 	},
 ];
 
@@ -128,7 +142,7 @@ export default function Calendar() {
 			<div className="max-w-md px-0 mt-8 mx-2 sm:mx-auto md:max-w-4xl lg:max-w-6xl">
 				{/* <div className="md:grid md:grid-cols-2 lg:grid-cols-3 divide-slate-800 md:divide-x-2 "> */}
 				<div className="flex flex-col md:flex-row divide-slate-800/50 md:divide-x-2 ">
-					<div className="md:pr-4 min-w-[350px] md:min-w-[400px]">
+					<div className="md:pr-4 min-w-[350px] md:min-w-[300px] lg:min-w-[400px]">
 						<div className="flex items-center">
 							<h2 className="flex-auto font-semibold text-white">
 								{format(firstDayCurrentMonth, "MMMM yyyy")}
@@ -251,7 +265,7 @@ export default function Calendar() {
 									/>
 								))
 							) : (
-								<p className="mx-2">Nothing scheduled for today</p>
+								<p className="mx-2">Nothing scheduled</p>
 							)}
 						</ol>
 					</section>
@@ -267,7 +281,7 @@ function Selection({ day }) {
 
 	return (
 		<li className="flex flex-col py-2 mx-2 space-x-4 group rounded-xl text-text-primary">
-			<div className="flex-auto">
+			<div className="flex-auto flex flex-col gap-y-2">
 				<h2 className="text-secondary font-semibold text-lg mb-2">
 					{day.name}
 				</h2>
@@ -280,26 +294,37 @@ function Selection({ day }) {
 						className="object-cover w-full h-40 rounded my-2"
 					/>
 				)}
-				<p className="text-xs leading-5 md:line-clamp-6">{day.description}</p>
-				<p className="mt-0.5">
-					{day?.startDatetime && (
-						<>
-							<time dateTime={day.startDatetime}>
-								{format(startDateTime, "h:mm a")}
-							</time>
-							{" "}
-						</>
-					)}
-
-					{day?.endDatetime && (
-						<>
-							-{" "}
-							<time dateTime={day.endDatetime}>
-								{format(endDateTime, "h:mm a")}
-							</time>
-						</>
-					)}
+				<p className="text-xs leading-5 md:line-clamp-6">
+					{day.description}
 				</p>
+				<div className="flex gap-x-2">
+					<p className="mt-0.5 text-sm border border-slate-600 bg-shaded rounded p-2 self-start">
+						{day?.startDatetime && (
+							<>
+								<time dateTime={day.startDatetime}>
+									{format(startDateTime, "h:mm a")}
+								</time>{" "}
+							</>
+						)}
+
+						{day?.endDatetime && (
+							<>
+								-{" "}
+								<time dateTime={day.endDatetime}>
+									{format(endDateTime, "h:mm a")}
+								</time>
+							</>
+						)}
+					</p>
+					{day?.addToCalendar && (
+						<a
+							href={day.addToCalendar}
+							className="inline-flex cursor-pointer items-center justify-center rounded-md text-sm font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:hover:bg-slate-800 dark:hover:text-slate-100 disabled:opacity-50 dark:focus:ring-slate-400 disabled:pointer-events-none dark:focus:ring-offset-slate-900 data-[state=open]:bg-slate-100 dark:data-[state=open]:bg-slate-800 bg-secondary text-white hover:bg-primary h-9 px-4"
+						>
+							{day.calendarMessage ? day.calendarMessage : "Add to Calendar"}
+						</a>
+					)}
+				</div>
 			</div>
 			{/* {JSON.stringify(meeting)} */}
 

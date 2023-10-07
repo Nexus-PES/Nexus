@@ -337,3 +337,28 @@ export const goalsData = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat numquam alias animi ab minus facilis molestiae sapiente soluta quia. Maxime magnam illo nulla architecto quasi porro est repellat quibusdam!",
 	},
 ];
+
+
+export const DomainData = [
+	{
+		id: 1,
+		name: "Web Development",
+		image: "/images/project-icon/OFAAX40 1.png",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem saepe sit necessitatibus quidem id magni dignissimos adipisci minima officia error.",
+	},
+	{
+		id: 2,
+		name: "App Development",
+		image: "/images/project-icon/OFAAX40 11.png",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem saepe sit necessitatibus quidem id magni dignissimos adipisci minima officia error1.",
+	},
+	{
+		id: 3,
+		name: "UI/UX Design",
+		image: "/images/project-icon/OFAAX40 12.png",
+		description:
+			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem saepe sit necessitatibus quidem id magni dignissimos adipisci minima officia error2.",
+	},
+];

@@ -1,4 +1,5 @@
 "use client";
+import  { Suspense } from "react";
 import Image from "next/image";
 import { Carousel } from "@mantine/carousel";
 import Link from "next/link";
@@ -19,6 +20,8 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 					</p>
 				</div>
 			</div>
+			<Suspense fallback={<p>loading</p>}>
+
 			<Carousel
 				withIndicators
 				controlSize={29}
@@ -52,6 +55,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 					</Carousel.Slide>
 				))}
 			</Carousel>
+			</Suspense>
 
 			<div className="flex items-center justify-between w-full sm:mx-2">
 				<span className="border-white/20 border hover:bg-gray-800/50 group rounded-md transition-all py-1 md:py-0.5  px-2">
@@ -60,7 +64,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 						href={`/events/${id}`}
 					>
 						<span className="sr-only">Read more about {eventName}</span>
-						<span className="text-xxs">Learn More</span>
+						<span className="text-xs">Learn More</span>
 						<Image
 							src="/images/icons/right-arrow.svg"
 							width={30}

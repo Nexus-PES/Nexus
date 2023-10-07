@@ -84,7 +84,7 @@ const ProjectDetailPage = () => {
 
 	return (
 		<>
-			<div className="mx-4 my-8 md:mx-auto max-w-[800px]">
+			<div className="mx-4 my-8 md:mx-auto max-w-[860px]">
 				<h1 className="mt-12 mb-10 text-3xl md:text-5xl font-bold">
 					Finding the Eulerian Cycle with Hierholzers Algorithm
 				</h1>
@@ -145,12 +145,12 @@ const ProjectDetailPage = () => {
 					<div className="flex gap-x-2 items-center">
 						<button
 							// data-tooltip-id="my-tooltip-listen"
-							className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20  hover:bg-white/10"
+							className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20  hover:bg-white/5"
 						>
 							<PiSpeakerSimpleNoneFill className="w-5 h-5" />
 							<span className="text-xxs">Listen</span>
 						</button>
-						<button className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20 hover:bg-white/10">
+						<button className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20 hover:bg-white/5">
 							<BsShareFill
 								// data-tooltip-id="my-tooltip-share"
 								className="w-3 h-3"
@@ -159,7 +159,7 @@ const ProjectDetailPage = () => {
 						</button>
 					</div>
 					<div className="flex gap-x-2 items-center">
-						<button className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20  hover:bg-white/10">
+						<button className="rounded-3xl py-1 px-3 border flex items-center gap-x-2 border-white/20  hover:bg-white/5">
 							<BsThreeDots
 								// data-tooltip-id="my-tooltip-more"
 								className="w-5 h-5"
@@ -260,7 +260,7 @@ const ProjectDetailPage = () => {
 				</ul>
 			</div>
 
-			<div className="rounded-sm mx-4 md:mx-auto max-w-[800px] bg-shaded p-8">
+			<div className="rounded-sm md:mx-auto max-w-[860px] bg-shaded outline outline-red-500  sm:p-4 md:p-6">
 				<div className="w-full flex flex-col gap-y-4 my-5">
 					<h1 className="text-2xl font-semibold text-white">What to read next</h1>
 					<p className="text-text-primary text-xs md:text-sm">We got you.</p>

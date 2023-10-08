@@ -107,11 +107,11 @@ export const projectData = [
 ];
 
 
-var idList = projectData.map((project) => (project.id))
+// var idList = projectData.map((project) => (project.id))
 
-const randomIndex = Math.floor(Math.random() * idList.length)
+// const randomIndex = Math.floor(Math.random() * idList.length)
 
-export const idOfDay = idList[randomIndex]
+// export const idOfDay = idList[randomIndex]
 
 export const activityData = [
 	{
@@ -125,8 +125,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 2,
 		eventName: "NexHunt",
 	},
@@ -141,8 +143,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 3,
 		eventName: "NeuroNex",
 	},
@@ -157,8 +161,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 9,
 		eventName: "NexHunt",
 	},
@@ -173,8 +179,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 9,
 		eventName: "NeuroNex",
 	},
@@ -189,8 +197,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 4,
 		eventName: "NexHunt",
 	},
@@ -205,8 +215,10 @@ export const activityData = [
 			"/images/events/unsplash_XtUd5SiX464.png",
 		],
 		date: new Date("Sep 9, 2023 9:00:00"),
-		summary:
-			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		summary: {
+			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+		},
 		likes: 2,
 		eventName: "NeuroNex",
 	},

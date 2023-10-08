@@ -1,18 +1,36 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { projectData } from "../../data";
+// import { projectData } from "../../data";
 import ProjectContainer from "../../components/ProjectContainer";
 import { AnimatePresence, motion } from "framer-motion";
 
 const ProjectPage = () => {
-	const [filteredProjects, setFilteredProjects] = useState(projectData);
+
+	const [allprojects, setallProjects] = useState([]);
+	const [filteredProjects, setFilteredProjects] = useState([]);
 	const [input, setInput] = useState("");
+	
+
+	useEffect(()=>{
+		const fetchProjects = async  () => {
+			const res = await fetch("/api/projects");
+			const data = await res.json();
+			// console.log(data.projectData)
+			setallProjects(data.projectData);
+			setFilteredProjects(data.projectData);
+		}
+		fetchProjects();
+	}, [])
+	
+	
 	useEffect(() => {
-		const newProject = projectData.filter((project) =>
+		const newProject = allprojects.filter((project) =>
 			project.projectName.toLowerCase().includes(input.toLowerCase())
 		);
 		setFilteredProjects(newProject);
 	}, [input]);
+
+
 
 	return (
 		<main className="mt-16 mx-4 sm:mx-14 md:mx-20 gap-y-10 md:gap-y-14 flex justify-center">

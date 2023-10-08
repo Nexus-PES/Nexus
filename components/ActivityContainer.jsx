@@ -111,7 +111,7 @@ const ActivityContainer = ({ id, images, date, summary, eventName, likes }) => {
 						openDesc ? "text-white/70" : "text-transparent"
 					} duration-1000 transition-all text-xs my-1`}
 				>
-					{summary}
+					{summary.short}
 				</p>
 			)}
 		</div>

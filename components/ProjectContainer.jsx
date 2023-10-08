@@ -68,7 +68,7 @@ const ProjectContainer = ({
 					</Link>
 				</span>
 				<div className="flex gap-x-1.5 items-center">
-				<span className="text-xxs text-white ">{getLength(summary.long)} min read</span>
+				<span className="text-xxs text-white">{getLength(summary.long)} min read</span>
 				<span className="text-xxs text-white font-extrabold pl-1">•</span>
 					{links.map((link, i) => (
 						<Link

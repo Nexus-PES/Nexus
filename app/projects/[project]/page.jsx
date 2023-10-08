@@ -6,7 +6,7 @@ import ProjectContainer from "../../../components/ProjectContainer";
 import More from "../../../components/More";
 
 import { PiSpeakerSimpleNoneFill } from "react-icons/pi";
-import { BsShareFill, BsThreeDots } from "react-icons/bs";
+import { BsShareFill } from "react-icons/bs";
 
 import { projectData } from "../../../data";
 import { getLength } from "../../../lib";

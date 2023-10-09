@@ -13,23 +13,19 @@ import { getLength } from "../../../lib";
 // console.log(projectData);
 
 const getData = async (projectId) => {
-  const url = process.env.NODE_ENV==='production' ? `https://nexus-pes.vercel.app/api/projects/${projectId}` : `http://localhost:3000/api/projects/${projectId}`;
+	const url =
+		process.env.NODE_ENV === "production"
+			? `https://nexus-pes.vercel.app/api/projects/${projectId}`
+			: `http://localhost:3000/api/projects/${projectId}`;
 
-  const res = await fetch(url);
-  return res.json();
-}
+	const res = await fetch(url);
+	return res.json();
+};
 
 const ProjectDetailPage = async ({ params }) => {
-	// console.log(params.project);
+	const projectDetail = await getData(params.project);
 
-
-  let projectDetail = await getData(params.project);
-
-
-	
 	const parsedDate = new Date("Sep 9, 2023 9:00:00").toDateString();
-
-	// const timeToRead =;
 
 	return (
 		<>
@@ -38,7 +34,7 @@ const ProjectDetailPage = async ({ params }) => {
 					{projectDetail.projectName}
 				</h1>
 				<ul className="flex text-xs gap-x-2 ">
-					<li>{getLength(projectDetail?.summary?.long)} min read</li>
+					{/* <li>{getLength(projectDetail?.summary?.long?.join())} min read</li> */}
 					<li>•</li>
 					<li>{parsedDate}</li>
 				</ul>
@@ -122,80 +118,11 @@ const ProjectDetailPage = async ({ params }) => {
 						className="rounded-sm object-cover w-full max-h-96 outline-[1px] outline-slate-400/50"
 					/>
 					<section className="space-y-5 my-10 text-text-primary text-sm leading-6 md:text-base md:leading-7">
-						<p>
-							{projectDetail?.summary?.long}
-							nec feugiat in. Eu tincidunt tortor aliquam nulla
-							facilisi. Amet mattis vulputate enim nulla aliquet.
-							Augue eget arcu dictum varius duis. Amet porttitor
-							eget dolor morbi. Quis varius quam quisque id diam
-							vel quam. Est velit egestas dui id ornare arcu odio.
-							Massa placerat duis ultricies lacus sed turpis
-							tincidunt. At risus viverra adipiscing at in tellus
-							integer feugiat. Mauris pharetra et ultrices neque
-							ornare aenean euismod elementum nisi. Bibendum neque
-							egestas congue quisque egestas diam. Adipiscing
-							commodo elit at imperdiet dui accumsan sit. Montes
-							nascetur ridiculus mus mauris. Vitae aliquet nec
-							ullamcorper sit amet risus. Congue quisque egestas
-							diam in arcu cursus. Malesuada bibendum arcu vitae
-							elementum curabitur vitae nunc sed velit. Gravida
-							cum sociis natoque penatibus et magnis dis
-							parturient. Imperdiet dui accumsan sit amet.
-							Scelerisque eleifend donec pretium vulputate sapien
-							nec sagittis aliquam. Varius vel pharetra vel turpis
-							nunc eget lorem dolor sed. Mauris commodo quis
-							imperdiet massa tincidunt nunc pulvinar sapien.
-							Egestas fringilla phasellus faucibus scelerisque
-							eleifend donec pretium vulputate sapien. Morbi non
-							arcu risus quis varius quam. Adipiscing elit
-							pellentesque habitant morbi tristique senectus.
-							Cursus eget nunc scelerisque viverra. Ipsum dolor
-							sit amet consectetur adipiscing elit pellentesque
-							habitant.
-						</p>
-						<p>
-							In this blog post, I would like to explain what are
-							function objects and how they can be used to solve
-							different problems by giving examples. Overriding
-							the call operator in a class, operator (), makes it
-							possible to call an object like an ordinary
-							function. Function objects (also known as functors)
-							are
-						</p>
-						<p>
-							In this blog post, I would like to explain what are
-							function objects and how they can be used to solve
-							different problems by giving examples. Overriding
-							the call operator in a class, operator (), makes it
-							possible to call an object like an ordinary
-							function. Function objects (also known as functors)
-							are
-						</p>
-						<p>
-							In this blog post, I would like to explain what are
-							function objects and how they can be used to solve
-							different problems by giving examples. Overriding
-							the call operator in a class,
-						</p>
-						<p>
-							operator. They are typically defined as classes in
-							C++, so they also enjoy the features of classes.
-							Using only classes and functions solves many
-							problems and it is fine. But sometimes function
-							objects are easier to use and save us from the
-							burden of complex solutions. STL (Standard Template
-							Library) in C++ provides useful built-in function
-							obj/ects and makes things easier. Understanding how
-							they are implemented under the hood gives insight
-							and encourages us to write custom function objects
-						</p>
-						<p>
-							if built-in function objects are not enough. The
-							question is in which situations do we prefer
-							functions objects? OK, lets go through the examples
-							and see how we can use functions objects for the
-							problems.
-						</p>
+						{/* {projectDetail.summary.long &&
+							projectDetail?.summary?.long.map((para, i) => (
+								<p key={i}>{para}</p>
+							))} */}
+							<p>{projectDetail?.summary?.long}</p>
 					</section>
 				</article>
 				<ul className="flex gap-x-2 items-center justify-center">

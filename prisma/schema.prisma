@@ -58,3 +58,12 @@ model Team {
   github_username String
   project         Project[]
 }
+
+model Registration {
+  id String @id @unique @default(uuid())
+  name String
+  email String
+  registrationDate DateTime @default(now())
+
+
+}

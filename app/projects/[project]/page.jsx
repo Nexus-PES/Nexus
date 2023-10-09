@@ -13,7 +13,7 @@ import { getLength } from "../../../lib";
 // console.log(projectData);
 
 const getData = async (projectId) => {
-  const url = process.env.NODE_ENV==='production' ? `nexus-pes.vercel.app/api/projects/${projectId}` : `http://localhost:3000/api/projects/${projectId}`;
+  const url = process.env.NODE_ENV==='production' ? `https://nexus-pes.vercel.app/api/projects/${projectId}` : `http://localhost:3000/api/projects/${projectId}`;
 
   const res = await fetch(url);
   return res.json();

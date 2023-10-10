@@ -34,10 +34,9 @@ export const projectData = [
 			long: "Web Development",
 		},
 		projectImage: "/images/projects/nexus-website-preview.png",
-		summary:
-		{
+		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et.",
 		},
 		links: [
 			{
@@ -63,7 +62,7 @@ export const projectData = [
 		projectImage: "/images/events/unsplash_-HIiNFXcbtQ.png",
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et.",
 		},
 		links: [
 			{
@@ -89,7 +88,7 @@ export const projectData = [
 		projectImage: "/images/events/unsplash_-HIiNFXcbtQ.png",
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et."
+			long: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis convallis convallis tellus id interdum velit laoreet id. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Integer feugiat scelerisque varius morbi. Magna ac placerat vestibulum lectus mauris ultrices eros. Morbi tristique senectus et netus et malesuada fames ac turpis. Dui sapien eget mi proin. Adipiscing tristique risus nec feugiat in fermentum posuere. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Odio tempor orci dapibus ultrices in. Ut tellus elementum sagittis vitae et.",
 		},
 		links: [
 			{
@@ -106,7 +105,6 @@ export const projectData = [
 	},
 ];
 
-
 // var idList = projectData.map((project) => (project.id))
 
 // const randomIndex = Math.floor(Math.random() * idList.length)
@@ -116,7 +114,7 @@ export const projectData = [
 export const activityData = [
 	{
 		id: 1,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -127,14 +125,14 @@ export const activityData = [
 		date: new Date("Sep 9, 2023 9:00:00"),
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit./n Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
 		},
 		likes: 2,
 		eventName: "NexHunt",
 	},
 	{
 		id: 2,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -145,14 +143,14 @@ export const activityData = [
 		date: new Date("Sep 9, 2023 9:00:00"),
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+			long: "Event 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. | Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
 		},
 		likes: 3,
 		eventName: "NeuroNex",
 	},
 	{
 		id: 3,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -163,14 +161,14 @@ export const activityData = [
 		date: new Date("Sep 9, 2023 9:00:00"),
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+			long: "Event 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
 		},
 		likes: 9,
 		eventName: "NexHunt",
 	},
 	{
 		id: 4,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -181,14 +179,14 @@ export const activityData = [
 		date: new Date("Sep 9, 2023 9:00:00"),
 		summary: {
 			short: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur qui",
-			long: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
+			long: "Event 4: Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis sapiente consectetur nemo aliquam nostrum autem vitae, cupiditate quia pariatur quis",
 		},
 		likes: 9,
 		eventName: "NeuroNex",
 	},
 	{
 		id: 5,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -206,7 +204,7 @@ export const activityData = [
 	},
 	{
 		id: 6,
-		images: [
+		eventImages: [
 			"/images/events/unsplash_-HIiNFXcbtQ.png",
 			"/images/events/unsplash_fT49QnFucQ8.png",
 			"/images/events/unsplash_ioJBsYQ-pPM.png",
@@ -331,7 +329,6 @@ export const faqData = [
 	},
 ];
 
-
 export const goalsData = [
 	{
 		heading: "Foster Innovation",
@@ -349,7 +346,6 @@ export const goalsData = [
 			"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quaerat numquam alias animi ab minus facilis molestiae sapiente soluta quia. Maxime magnam illo nulla architecto quasi porro est repellat quibusdam!",
 	},
 ];
-
 
 export const DomainData = [
 	{

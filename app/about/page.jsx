@@ -19,11 +19,11 @@ const About = () => {
 						Welcome to{" "}
 						<Link
 							href="/"
-							className="underline text-secondary"
+							className="underline text-primary text-xl font-bold"
 						>
-							Nexus
+							NEXUS
 						</Link>
-						, where innovation knows no bounds and creativity fuels
+						 , where innovation knows no bounds and creativity fuels
 						our passion for making a difference in the world of
 						technology and engineering.
 					</SubHero>

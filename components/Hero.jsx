@@ -4,7 +4,7 @@ const Hero = () => {
 	return (
 		<div className="mx-auto relative gap-y-5 py-6 flex max-w-xl flex-col justify-center items-center">
 			<span className="gradient"></span>
-			<h1 className="text-clamp text-center font-black bg-gradient-to-r from-primary via-blue-500 to-secondary text-transparent bg-clip-text animate-gradient">
+			<h1 className="text-clamp text-center font-black bg-gradient-to-r from-primary via-blue to-secondary text-transparent bg-clip-text animate-gradient">
 				NEXUS CLUB
 			</h1>
 			<h2 className="md:text-4xl text-3xl text-white sm:text-balance text-center font-bold">

@@ -9,49 +9,52 @@ const Footer = () => {
         <div className="flex gap-10 mt-5 flex-col sm:flex-row">
           <div className="flex flex-col gap-5">
             <Link href="/">
-              <h1 className="text-2xl text-primary font-semibold ">NEXUS</h1>
+              <h1 className="text-3xl text-primary  font-black bg-gradient-to-r from-primary via-blue-600 to-secondary text-transparent bg-clip-text animate-gradient">
+                NEXUS
+              </h1>
             </Link>
-            <p className="text-xs">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-              odit provident et natus maiores corrupti sequi id ab ipsa soluta.
+            <p className="text-sm ">
+              Explore innovation with Nexus Club, the heart of PES University's
+              CSE department. Join us in the world of technology, where learning
+              and creativity collide.
             </p>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex gap-2 items-center">
               <div className="h-[16px] w-[2px] bg-primary"></div>
-              <h2 className="font-semibold text-xxs">Links</h2>
+              <h2 className="font-semibold text-base">Links</h2>
             </div>
             <Link href="/">
-              <p className="text-white/70 text-xxs">Home</p>
+              <p className="text-white/70 text-sm">Home</p>
             </Link>
             <Link href="/about">
-              <p className="text-white/70 text-xxs">About Us</p>
+              <p className="text-white/70 text-sm">About Us</p>
             </Link>
             <Link href="/events">
-              <p className="text-white/70 text-xxs">Events</p>
+              <p className="text-white/70 text-sm">Events</p>
             </Link>
           </div>
           <div className="flex flex-col gap-3">
             <div className="flex gap-2 items-center">
               <div className="h-[16px] w-[2px] bg-primary"></div>
-              <h2 className="font-semibold text-xxs">Projects</h2>
+              <h2 className="font-semibold text-base">Projects</h2>
             </div>
             <Link href="/projects">
-              <p className="text-white/70 text-xxs">All Projects</p>
+              <p className="text-white/70 text-sm">All Projects</p>
             </Link>
             <Link href="/projects/1">
-              <p className="text-white/70 text-xxs">Project 1</p>
+              <p className="text-white/70 text-sm">Project 1</p>
             </Link>
             <Link href="/projects/2">
-              <p className="text-white/70 text-xxs">Project 2</p>
+              <p className="text-white/70 text-sm">Project 2</p>
             </Link>
           </div>
           <div className="flex flex-col gap-3">
             <div className="flex gap-2 items-center">
               <div className="h-[16px] w-[2px] bg-primary"></div>
-              <h2 className="font-semibold text-xxs">Others</h2>
+              <h2 className="font-semibold text-base">Others</h2>
             </div>
-            <p className="text-white/70 text-xxs">Follow us on Social Media</p>
+            <p className="text-white/70 text-sm">Follow us on Social Media</p>
             <div className="flex gap-2  justify-between">
               <Link href="https://www.instagram.com/nexus.pesu/">
                 <Image

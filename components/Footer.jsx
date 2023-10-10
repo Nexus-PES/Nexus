@@ -14,9 +14,9 @@ const Footer = () => {
               </h1>
             </Link>
             <p className="text-sm ">
-              Explore innovation with Nexus Club, the heart of PES University's
-              CSE department. Join us in the world of technology, where learning
-              and creativity collide.
+              Explore innovation with Nexus Club, the heart of PES
+              University&apos;s CSE department. Join us in the world of
+              technology, where learning and creativity collide.
             </p>
           </div>
           <div className="flex flex-col gap-2">

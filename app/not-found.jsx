@@ -12,7 +12,7 @@ const notfound = () => {
             OOPS! PAGE NOT FOUND
           </p>
           <p className="mt-5 text-center">
-            Sorry, the page you are looking for doesn't exist
+            Sorry, the page you are looking for doesn&apos;t exist
           </p>
 
           <Button

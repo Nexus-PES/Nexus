@@ -15,10 +15,20 @@ import { getLength } from "../../../lib";
 const getData = async (eventId) => {
 	const url =
 		process.env.NODE_ENV === "production"
-			? `https://nexus-pes.vercel.app/api/events/${eventId}`
-			: `http://localhost:3000/api/events/${eventId}`;
+			? `https://nexus-pes.vercel.app/api/events`
+			: `http://localhost:3000/api/events`;
 
-	const res = await fetch(url);
+	const res = await fetch(url, {
+		method: "POST",
+		body: JSON.stringify({
+			eventId,
+		}),
+		headers: {
+			headers: {
+				"Content-Type": "application/json",
+			},
+		},
+	});
 	return res.json();
 };
 
